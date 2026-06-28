@@ -7,3 +7,8 @@ assets/metadata.pkl
 
 # Notebook checkpoints
 .ipynb_checkpoints/
+
+__pycache__/
+*.pyc
+*.pyo
+
