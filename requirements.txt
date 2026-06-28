@@ -14,4 +14,7 @@ python-dotenv
 sentence-transformers
 faiss-cpu
 nltk
-pickle
+#pickle
+ollama
+llama-cpp-python
+#pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu

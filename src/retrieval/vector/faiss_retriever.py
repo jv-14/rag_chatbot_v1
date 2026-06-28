@@ -9,10 +9,9 @@ class SearchFaiss:
     def search_context(self,query: str,index,metadata,top_k:int =5):
         
         query_embedded = self.embedder.embed_query(query)
-        # Reshape to 2D array (1, dimension) for FAISS
+        
         query_embedded_2d = np.expand_dims(query_embedded, axis=0)
 
-        # 2. Search using the passed index
         scores,indices=index.search(
             query_embedded_2d,top_k
         )
